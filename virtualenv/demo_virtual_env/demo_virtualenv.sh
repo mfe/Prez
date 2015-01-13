@@ -19,6 +19,7 @@ print_ptitle "Part 2: create a virtualenv"
 prompt_and_exe "virtualenv test_env"
 prompt_and_exe "ls"
 prompt_and_exe "ls test_env"
+prompt_and_exe "ls test_env/bin"
 
 # Activate
 print_ptitle "Part 3: activate a virtualenv"
