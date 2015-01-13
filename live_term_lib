@@ -1,0 +1,20 @@
+
+fake_prompt='[\e[35mdemo\e[39m]$ '
+
+function print_title {
+	echo -e "\e[33m## $1 ##\e[39m"
+}
+
+function print_ptitle {
+	clear
+	echo -e "\e[33m>> $1\e[39m"
+	echo -e -n "\e[32m$PS1\e[39m"$fake_prompt
+}
+
+function prompt_and_exe {
+	echo -n " "$1 
+	read
+	eval $1
+	echo -e -n "\e[32m$PS1\e[39m"$fake_prompt
+	read -s -r
+}
