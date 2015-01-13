@@ -32,7 +32,7 @@ print_ptitle "Part 4: install a package"
 prompt_and_exe "pip install nose"
 prompt_and_exe "pip freeze"
 # Deactivate
-print_ptitle "Part 5: deactivate a package"
+print_ptitle "Part 5: deactivate a virtualenv"
 export PS1=
 prompt_and_exe "deactivate"
 prompt_and_exe "pip freeze"
